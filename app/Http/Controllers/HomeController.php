@@ -10,4 +10,9 @@ class HomeController extends MainController
         return view('index');
     }
 
+    public function packages()
+    {
+        return view('packages');
+    }
+
 }
