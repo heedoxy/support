@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-sm-6 col-xxl-3">
                         <a href="./">
-                            <div class="card card-full bg-indigo">
+                            <div class="card card-full bg-info">
                                 <div class="card-inner p-5">
                                     <h5 class="fs-1 text-white mx-auto text-center">
                                         <small>
