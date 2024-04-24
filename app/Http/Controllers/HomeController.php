@@ -15,4 +15,9 @@ class HomeController extends MainController
         return view('packages');
     }
 
+    public function tags()
+    {
+        return view('tags');
+    }
+
 }
