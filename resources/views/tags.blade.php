@@ -7,19 +7,13 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container-xl wide-xl mt-5">
+    <div class="container-xl wide-xl">
         <div class="nk-content-body">
             <div class="components-preview wide-xl mx-auto">
-                <div class="nk-block-head nk-block-head-lg wide-sm">
-                    <div class="nk-block-head-content">
-                        <div class="nk-block-head-sub">
-                            <a class="back-to" href="./packages">
-                                <em class="icon ni ni-arrow-left"></em>
-                                <span>مشاهده سامانه ها</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <x-buttons.back
+                    link="./packages"
+                    text="مشاهده سامانه ها"
+                />
                 <div class="nk-block nk-block-lg">
                     <div class="card card-preview">
                         <div class="card-inner">
