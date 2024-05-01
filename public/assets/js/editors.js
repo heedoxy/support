@@ -9,9 +9,9 @@
     if ($(_basic).exists()) {
       $(_basic).each(function () {
         $(this).summernote({
-          placeholder: 'سلام رابط کاربری مستقل',
+          placeholder: 'محتوای خود را در این بخش وارد نمایید.',
           tabsize: 2,
-          height: 120,
+          height: 500,
           toolbar: [['style', ['style']], ['font', ['bold', 'underline', 'strikethrough', 'clear']], ['font', ['superscript', 'subscript']], ['color', ['color']], ['fontsize', ['fontsize', 'height']], ['para', ['ul', 'ol', 'paragraph']], ['table', ['table']], ['insert', ['link', 'picture', 'video']], ['view', ['fullscreen', 'codeview', 'help']]]
         });
       });
