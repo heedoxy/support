@@ -2,59 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Models;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class MainController
 {
     protected Request $request;
-    protected Model $model;
     protected array $params;
     protected string $resource;
+    protected string $panel;
 
-    public function __construct(Request $request, Model $model)
+    public function __construct(Request $request)
     {
         $this->request = $request;
         $this->params = $request->all();
-        $this->model = $model;
+        $this->panel = env('APP_PANEL');
     }
 
-    public function index()
+    public function success($message = '')
     {
-        dd('index');
+        Session::flash('alert-success', $message);
     }
 
-    public function create()
+    public function warning($message = '')
     {
-        dd('create');
+        Session::flash('alert-warning', $message);
     }
 
-    public function store()
+    public function info($message = '')
     {
-        $object = $this->model->create($this->params);
-        return redirect(route($this->resource . '.show', $object->id));
+        Session::flash('alert-info', $message);
     }
 
-    public function show($id)
+    public function error($message = '')
     {
-        return view();
-    }
-
-    public function edit($id)
-    {
-
-    }
-
-    public function update($id)
-    {
-        $object = $this->model->find($id);
-        $object->update($this->params);
-            return redirect(route($this->resource . '.show', $id));
-    }
-
-    public function destroy()
-    {
+        Session::flash('alert-error', $message);
     }
 
 }

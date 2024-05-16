@@ -19794,7 +19794,6 @@ div.dataTables_wrapper div.dataTables_filter input~.invalid,
 .form-select~.invalid {
   color: #F2426E;
   font-size: 11px;
-  font-style: italic;
 }
 
 .custom-btn-check {

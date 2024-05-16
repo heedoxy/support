@@ -2,7 +2,7 @@
     <div class="nk-block-head-content">
         <div class="nk-block-head-sub">
             <a class="back-to" href="{{ $link }}">
-                <em class="icon ni ni-arrow-left"></em>
+                <em class="icon ni {{ $icon ?? "ni-arrow-left" }}"></em>
                 <span>{{ $text }}</span>
             </a>
         </div>

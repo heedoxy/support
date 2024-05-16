@@ -1,10 +1,10 @@
 "use strict";
 
-!function (NioApp, $) {
+!function (Niyam, $) {
   "use strict";
 
   // SummerNote Init @v1.0
-  NioApp.SummerNote = function () {
+  Niyam.SummerNote = function () {
     var _basic = '.summernote-basic';
     if ($(_basic).exists()) {
       $(_basic).each(function () {
@@ -30,7 +30,7 @@
   };
 
   // Tinymce Init @v1.0
-  NioApp.Tinymce = function () {
+  Niyam.Tinymce = function () {
     var _tinymce_basic = '.tinymce-basic';
     if ($(_tinymce_basic).exists()) {
       tinymce.init({
@@ -75,7 +75,7 @@
   };
 
   // Quill Init @v1.0
-  NioApp.Quill = function () {
+  Niyam.Quill = function () {
     var _basic = '.quill-basic';
     if ($(_basic).exists()) {
       $(_basic).each(function () {
@@ -151,10 +151,10 @@
   };
 
   // Editor Init @v1
-  NioApp.EditorInit = function () {
-    NioApp.SummerNote();
-    NioApp.Tinymce();
-    NioApp.Quill();
+  Niyam.EditorInit = function () {
+    Niyam.SummerNote();
+    Niyam.Tinymce();
+    Niyam.Quill();
   };
-  NioApp.coms.docReady.push(NioApp.EditorInit);
-}(NioApp, jQuery);
+  Niyam.coms.docReady.push(Niyam.EditorInit);
+}(Niyam, jQuery);

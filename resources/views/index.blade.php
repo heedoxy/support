@@ -27,7 +27,8 @@
             <br>
             <p class="nk-error-text">شما به کمک این سامانه میتوانید با دستیابی به آموزش همه سامانه ها،
                 تسلطی نسبی کسب کنید.</p>
-            <a href="/packages" class="btn btn-lg btn-primary mt-2">ورود به سامانه</a>
+            <a href="/packages" class="btn btn-lg btn-primary mt-2">مشاهده سامانه</a>
+            <a href="{{ route('login') }}" class="btn btn-lg btn-secondary mt-2">ورود به سامانه</a>
         </div>
     </div>
 @endsection

@@ -22,26 +22,21 @@
         <div class="nk-content-body">
             <div class="components-preview wide-xl mx-auto">
                 <x-buttons.back
-                    link="./tags"
+                    link="./category/{{ $_object->category_id }}"
                     text="مشاهده پکیج"
                 />
                 <!-- .nk-block-head -->
                 <div class="nk-block nk-block-lg">
-                    <form method="post"
-                          action="{{  $_editing ? route('content.update', $_object->id) : route('content.store') }}">
-                        @csrf
-                        @method($_editing ? 'PUT' : 'POST')
-                        <div class="card">
-                            <div class="card-inner">
-                                <div class="nk-block-head">
-                                    <div class="nk-block-head-content">
-                                        <h4 class="title nk-block-title"></h4>
-                                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="nk-block-head">
+                                <div class="nk-block-head-content">
+                                    <h4 class="title nk-block-title"></h4>
                                 </div>
-                                 {!! $_object->content !!}}
                             </div>
+                            {!! $_object->content !!}}
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <!-- .nk-block -->
             </div>

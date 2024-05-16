@@ -2,8 +2,9 @@
 
     $_title = $_title ?? 'پیمان پردازش نیام';
     $_sidebar = $_sidebar ?? true;
-    $_header = $_header ?? true;
-    $_footer = $_footer ?? true;
+    $_header = $_header ?? false;
+    $_footer = $_footer ?? false;
+    $_panel = env('APP_PANEL')
 
 @endphp
 
@@ -191,7 +192,10 @@
 <!-- JavaScript -->
 <script src="./assets/js/bundle.js"></script>
 <script src="./assets/js/scripts.js"></script>
+<script src="./assets/js/libs/datatable-btns.js"></script>
+<script src="./assets/js/example-sweetalert.js"></script>
 
+@include('layouts.toastr')
 @yield('script')
 
 </body>

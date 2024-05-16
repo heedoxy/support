@@ -40,7 +40,7 @@
                                 </div>
                                 <label for="content"></label>
                                 <textarea id="content" name="content" class="summernote-basic"
-                                >{{ $_editing ? $object->content : '' }}</textarea>
+                                >{{ $editing ? $object->content : '' }}</textarea>
                                 <button class="btn btn-wider btn-primary mt-2">
                                     <span>ثبت و ذخیره محتوا</span>
                                     <em class="icon ni ni-arrow-right"></em>
